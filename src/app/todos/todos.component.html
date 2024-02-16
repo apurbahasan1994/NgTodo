@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="todo__container">
+        <div class="todo__search">
+            <div class="todo__search__input">
+                <div><span class="material-icons">search</span> </div>
+                <input placeholder="Search Todos">
+            </div>
+        </div>
+        <div class="todos__list">
+            <app-todo-item *ngFor="let item of [1,2,3,4]"></app-todo-item>
+        </div>
+    </div>
+</div>

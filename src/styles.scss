@@ -1,13 +1,11 @@
-$primary-color: #219ebc;
-$secondary-color:#8ecae6;
-$text-color:#023047;
-$waring-color:#ffb703;
-$danger-color : #e76f51;
-$body-color:#fefae0;
-$accent-color:#dad7cd;
-
+@import '~material-icons/iconfont/material-icons.css';
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
 }
