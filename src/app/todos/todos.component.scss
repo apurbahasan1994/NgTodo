@@ -1,17 +1,27 @@
 @import '../../root';
+
 .todo__container {
     max-width: 700px;
     margin: 0px auto;
     margin-top: 40px;
+}
+.todo__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .todo__search__input {
     background-color: white;
     display: flex;
     align-items: center;
+    width: 100%;
     padding: 0px 10px;
-    border-radius: 8px;
-
+    border-radius: 4px;
+    .material-icons{
+        color: $primary-color;
+    }
     input {
         border: none;
         width: 100%;
@@ -21,9 +31,29 @@
     &:focus-within {
         outline: 2px solid $primary-color; 
     }
+    input::placeholder{
+        font-weight: bold;
+        color: $text-color;
+    }
 
 }
 
 .todos__list{
     margin-top: 20px;
+}
+.todos__header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    button{
+        min-width: 100px;
+        padding: 10px 10px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-color: $secondary-color;
+        font-weight: bold;
+        cursor: pointer;
+        color: $text-color;
+    }
 }
